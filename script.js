@@ -39,10 +39,10 @@ function direction(event) {
     else if (key === 38 && d !== "DOWN") d = "UP";
     else if (key === 39 && d !== "LEFT") d = "RIGHT";
     else if (key === 40 && d !== "UP") d = "DOWN";
-    else if (key === 65 && d !== "RIGHT") d = "LEFT"; // A key
-    else if (key === 87 && d !== "DOWN") d = "UP"; // W key
-    else if (key === 68 && d !== "LEFT") d = "RIGHT"; // D key
-    else if (key === 83 && d !== "UP") d = "DOWN"; // S key
+    else if (key === 65 && d !== "RIGHT") d = "LEFT"; 
+    else if (key === 87 && d !== "DOWN") d = "UP"; 
+    else if (key === 68 && d !== "LEFT") d = "RIGHT"; 
+    else if (key === 83 && d !== "UP") d = "DOWN"; 
 }
 
 function draw() {
@@ -86,7 +86,7 @@ function draw() {
         scoreDisplay.innerHTML = "Score: " + score;
         specialFood = null;
 
-        // Yılanı 3 segment büyüt
+        
         for (let i = 0; i < 3; i++) {
             snake.unshift({ x: snake[0].x, y: snake[0].y });
         }
@@ -151,7 +151,7 @@ function generateSpecialFood() {
 
 function gameOver() {
     highScore = score > highScore ? score : highScore;
-    gameOverDisplay.innerHTML = `Güncel Skorun: ${highScore}`;
+    gameOverDisplay.innerHTML = `Your Current Score: ${highScore}`;
     gameOverDisplay.style.display = 'block';
 }
 
