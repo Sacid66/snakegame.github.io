@@ -27,7 +27,7 @@ function initializeGame() {
     food = generateFood();
     specialFood = null;
     scoreDisplay.innerHTML = "Score: " + score;
-    gameOverDisplay.innerHTML = `Güncel Skorun: ${highScore}`;
+    gameOverDisplay.innerHTML = `Your Current Score: ${highScore}`;
     gameOverDisplay.style.display = 'none';
 }
 
